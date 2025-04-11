@@ -1,34 +1,19 @@
-# Ignore Python cache files
+# Ignore Python cache
 __pycache__/
 *.py[cod]
 
-# Ignore environment files
+# Ignore virtual environments
 venv/
 env/
 ENV/
-*.env
-*.pyenv
-*.venv
+Lib/
+Scripts/
+pyvenv.cfg
 
-# Ignore SQLite DB
-*.sqlite3
-db.sqlite3
-
-# Ignore Django migrations (optional, keep if you're not versioning them)
-**/migrations/*.pyc
-**/migrations/__pycache__/
-
-# Ignore compiled files
-*.log
-
-# Ignore IDEs and editor settings
+# Ignore editor/IDE settings
 .vscode/
 .idea/
 
-# Byte-compiled / optimized / DLL files
-*.pyo
-*.pyd
-*.so
-
-# MacOS
-.DS_Store
+# Ignore migration files if needed
+**/migrations/*.pyc
+**/migrations/__pycache__/
